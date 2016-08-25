@@ -1,4 +1,5 @@
 function random(max){
-  console.info("random max region : 0 ~ "+max);
-  return Math.floor(Math.randowm() * 100);
+  if(max == undefined) max = 100;
+  console.info("random max region : 0 ~ " + max);
+  return Math.floor(Math.randowm() * max);
 }
